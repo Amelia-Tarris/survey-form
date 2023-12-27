@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">      
+  <div class="frame">
+  <div class="canvas"></div>
+        <head> 
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+<h1 id="title">Reading Habits</h1><br>
+<link rel="stylesheet" href="styles.css" />
+<p id="description" ">Please tell us about your reading habits and fill out this form with the required information</p>
+</head>
+<body> 
+<form id="survey-form" id="number"> 
+  <fieldset>
+  <label for="full-name" id="name-label">Enter your full name: </label><input id="name" type="text" required placeholder="Full Name">
+    <label id="email-label" for="email" id="email-label">Enter you email: <input id="email" type="email" required placeholder="Email"><label>
+      <label for="age" id="number-label">Enter your age: <input id="number" type="number" name="age" min="13" max="120" required placeholder="Number"></label>
+</fieldset>
+<fieldset>
+            <legend >What type of books do you like to read? Choose all that are applicable.</legend>
+            <input id="fantasy" type="checkbox" value="fantasy"> <label for="fantasy">Fantasy</label>
+
+            <input id="romance" type="checkbox" value="romance"> <label for="lazy">Romance</label>
+    
+            <input id="mystery" type="checkbox" value="mystery"> <label for="mystery">Mystery</label>
+
+            <input id="sci-fi" type="checkbox" value="sci-fi"> <label for="sci-fi">Sci-fi</label><br>
+
+            <input id="horror" type="checkbox" value="horror"> <label for="horror">Horror</label>
+
+            <input id="biographies" type="checkbox" value="biographies"> <label for="biographies">Biographies</label>
+            <input id="other" type="checkbox" value="other"> <label for="other">Other</label>
+          </fieldset>
+  <fieldset>          
+    <label for="dropdown">What is your favourite medium to read from? 
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">EBooks</option>
+            <option value="2">Newspaper</option>
+            <option value="3">Magazine</option>
+            <option value="4">Paperback Book</option>
+            <option value="5">Hardback Book</option>
+            <option value="6">Website</option> 
+            <option value="7">Other</option>
+          </select> </label> </fieldset> 
+  <fieldset>
+                <label for="yes"> <h2>Do you prefer to read in silence?</h2><br>
+                <input id="yes" type="radio" name="question" class="inline" value="yes"/> Yes</label>
+        <label for="no"><input id="no" name="question" type="radio"  class="inline" value="no"/> No</label></legend>
+</fieldset>
+<label for="recommendations">Do you have any book recommendations?
+  <textarea id="recommendations" name="recommendations" rows="4" cols="39" placeholder="I would recommend..."></textarea>
+        </label>
+        <fieldset>
+        <label for="picture">Upload a picture of your favourite book: <br><input id="picture" type="file" name="file" /></label></fieldset>
+        <input id="submit" type="submit" value="Submit" /><br>
+ </form>
+ </body> 
+</html>
